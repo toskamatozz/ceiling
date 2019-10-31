@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.ceiling {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50px)[9];
+      grid-template-columns: repeat(9, 50px);
+}
+
+img {
+  outline: 5px solid gray;
+  outline-offset: -2.5px;
+  height: 50px;
+  width: 50px;
+}
+
+img:nth-child(22), img:nth-child(24), img:nth-child(58), img:nth-child(60) {
+  -webkit-filter: contrast(20);
+          filter: contrast(20);
+}
+/*# sourceMappingURL=main.css.map */

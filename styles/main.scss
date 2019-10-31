@@ -1,0 +1,23 @@
+//  You can change size of cells with borders by changing this variable
+    $size: 50px;
+
+*   {
+    margin: 0;
+    padding: 0;
+}
+.ceiling    {
+    display: grid;
+    grid-template-columns: repeat(9, #{$size});
+}
+img {
+    outline: #{$size/10} solid gray;
+    outline-offset: #{-$size/20};
+    height: #{$size};
+    width: #{$size};
+    &:nth-child(22),
+    &:nth-child(24),
+    &:nth-child(58),
+    &:nth-child(60) {
+        filter: contrast(20);
+    }
+}
